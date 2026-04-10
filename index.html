@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Patrick Connelly</title>
+    <style type="text/css">
+      /* start elements */
+      a {
+        color: rgb(0, 255, 0);
+        text-decoration: underline;
+        text-decoration-color: rgb(17, 80, 17);
+        cursor: pointer;
+      }
+      body {
+        font-family: monospace;
+        background-color: black;
+        color: rgb(18, 157, 18);
+      }     
+      /* end elements */
+      
+      /* start misc class */
+      .subtext {
+        font-size: smaller;
+        font-style: italic;
+      }
+      .page {
+        margin: 0 0 0 5vw;
+        max-width: 75vw;
+      }
+      .recent-picture {
+        max-width: 75vw;
+        max-height: 50vh;
+        cursor: pointer;
+      }
+      /* end misc class */
+
+      /* start light mode */
+      @media screen and (prefers-color-scheme: light) {
+        body {
+          background-color: antiquewhite;
+          color: darkslategray;
+        }
+        a {
+          color: rgb(95, 149, 230);
+          text-decoration: none;
+        }
+      }
+      /* end light mode */
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <h4>Here's a picture</h4>
+      <div id="pic">
+        <img class="recent-picture" src="budakirkja.png" alt="recent picture" onclick="window.open(this.src, '_blank');"/>
+        <a href="https://www.budakirkja.is" target="_blank"><p>Búðakirkja, Iceland</p></a>
+        <p class="subtext">64°49'18"N 23°23'04"W</p>
+      </div>
+    </div>
+  </body>
+</html>
